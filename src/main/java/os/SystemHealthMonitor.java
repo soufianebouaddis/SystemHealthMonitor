@@ -99,7 +99,7 @@ public class SystemHealthMonitor extends JFrame {
                     .append(edid != null ? edid.length : 0).append(" bytes\n");
         }
 
-        // Uptime (get from OperatingSystem not CPU)
+        // Uptime (from OperatingSystem)
         long uptimeSec = os.getSystemUptime();
         Duration uptime = Duration.ofSeconds(uptimeSec);
         long hours = uptime.toHours();
