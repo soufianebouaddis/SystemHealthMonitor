@@ -28,6 +28,6 @@ cd system-health-monitor
 mvn clean install
 mvn exec:java -Dexec.mainClass="SystemHealthMonitor"
 ```
-⚠️ ### Known Limitations
+### ⚠️ Known Limitations
 - Some hardware details (e.g., CPU temperature, battery voltage, or fan speeds) may not be available on all systems due to OS or manufacturer limitations.
 - You might see benign WMI warnings on Windows if your system doesn't expose certain thermal zones.
